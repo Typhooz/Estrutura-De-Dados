@@ -1,4 +1,7 @@
-/* ex0Mallo.c*/
+/*- Guilherme Birck
+  - Estrutura De Dados
+  - UNOESC 
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,10 +13,10 @@ int main()
 	scanf("%d", &tamanho);
 	p = (int *)malloc(sizeof(int)*tamanho);
 	
-	if(p) { //testa se memória  foi alocada
+	if(p) { //testa se memÃ³ria  foi alocada
 		printf("\nMemoria alocada com sucesso. \n\n");		
 	}else {
-		printf("Não foi possivel alocar a memoria. z\n");
+		printf("NÃ£o foi possivel alocar a memoria. z\n");
 		return 0; //Finaliza o programa
 	}
 	for(int i = 0; i <5; i++ ) {
