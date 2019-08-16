@@ -10,7 +10,11 @@ valores em ordem inversa da inserção.
 
 2) Altere o programa para armazenar uma estrutura em
 um vetor.
-Exercícios
+typedef struct {
+	  char nome[50];
+	  char endereco[100];
+	  int matricula;
+} estudante;
 
 3) Altere o programa do exercício I, de forma que
 receba números inteiros do usuário indefinidamente.
