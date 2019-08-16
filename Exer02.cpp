@@ -1,4 +1,8 @@
-/* ex0Mallo.c*/
+/*- Guilherme Birck
+  - Estrutura De Dados
+  - UNOESC 
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,7 +16,7 @@ void cadastroEstudante(estudante *p) {
 	printf("\tNome: ");
 	fflush(stdin);
 	fgets(p->name,50,stdin);
-	printf("\tEndereço: ");
+	printf("\tEndereÃ§o: ");
 	fflush(stdin);
 	fgets(p->endereco,100,stdin);
 	printf("\tMatricula: ");
@@ -22,7 +26,7 @@ void cadastroEstudante(estudante *p) {
 void imprimirEstudantes(estudante *p){
 	printf("--Estutantes no Vetor--\n");
 	printf("Nome:%s ", p->name);
-	printf("Endereço:%s", p->endereco);
+	printf("EndereÃ§o:%s", p->endereco);
 	printf("Matricula:%d", p->matricula);
 }
 
@@ -34,10 +38,10 @@ int main()
 	printf("Digite o tamanho da memoria: ");
 	scanf("%d", &tamanho);
 	p = (estudante *)malloc(sizeof(estudante)*tamanho);
-	if(p) { //testa se memória  foi alocada
+	if(p) { //testa se memÃ³ria  foi alocada
 		printf("\nMemoria alocada com sucesso. \n\n");		
 	}else {
-		printf("Não foi possivel alocar a memoria. z\n");
+		printf("NÃ£o foi possivel alocar a memoria. z\n");
 		return 0; //Finaliza o programa
 	}
 
